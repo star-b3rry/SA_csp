@@ -1,0 +1,5 @@
+place= input("tell me a location: ")
+verb= input("give me a verb: ")
+feeling= input("Give me a feeling: ")
+sentence = ("in " + place+ " in the sun we'll be " + verb+ " and having fun " + "and it makes me feel so " + feeling )
+print(sentence)
