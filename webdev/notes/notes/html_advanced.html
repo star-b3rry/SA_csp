@@ -3,9 +3,35 @@
     <head>
         <title>Notes on Advanced HTML</title>
         <meta charset="UTF-8">
+        <!--Embeded style sheets are good practice. They go inside the head tag-->
+        <style>
+            *{
+                background-color: blueviolet;
+            }
+            p{
+                background-color: rgb(196, 248, 255);
+                text-align: center;
+            }
+            #ordered{
+                color:cornflowerblue
+            }
+            .section-2{
+                font-family: papyrus, fantasy;
+                border: 3px solid white
+            }
+            .odd{
+                color:rgb(247, 0, 255);
+                background-color: rgb(56, 18, 197);
+                color:aquamarine
+            }
+            h1{
+                font-size: 200px;
+            }
+        </style>
     </head>
     <body>
         <h1>Advanced HTML</h1>
+        <!--Inline Style. It is a BAD syntax-->
         <div style="background:rgb(112, 48, 185);">
             <p>This is a div!</p>
         </div>
@@ -17,7 +43,7 @@
             <li>Advanced Computer programming (Programming 3) </li>
         </ol>
         <p>This is how you make an unordered list (bulleted list) lisy</p>
-        <ul>
+        <ul style="list-style-type: circle;">
             <li>Apple</li>
             <li>Orange</li>
             <li>Banana</li>
