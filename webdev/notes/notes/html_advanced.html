@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <!--Embeded style sheets are good practice. They go inside the head tag-->
         <style>
-            *{
+            body{
                 background-color: blueviolet;
             }
             p{
                 background-color: rgb(196, 248, 255);
-                text-align: center;
+                font-family: cursive;
             }
             #ordered{
                 color:cornflowerblue
@@ -27,13 +27,16 @@
             h1{
                 font-size: 200px;
             }
+            #bold{
+                font-weight: 900;
+            }
         </style>
     </head>
     <body>
         <h1>Advanced HTML</h1>
         <!--Inline Style. It is a BAD syntax-->
         <div style="background:rgb(112, 48, 185);">
-            <p>This is a div!</p>
+            <p>This is <span class="special"> a div</span>!</p>
         </div>
         <p>This is how you make an ordered list</p>
         <ol>
