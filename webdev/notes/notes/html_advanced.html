@@ -1,59 +1,118 @@
-<!DOCTYPE html> 
-<html lang="en">
-    <head>
-        <title>Notes on Advanced HTML</title>
-        <meta charset="UTF-8">
-        <!--Embeded style sheets are good practice. They go inside the head tag-->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk:MORF@24&display=swap" rel="stylesheet">
+    <title>Notes on advanced HTML</title>
+    <meta charset= "UTF-8">
+        <!--embedded style, good practice, go inside the head tag -->
         <style>
             body{
-                background-color: blueviolet;
-            }
-            p{
-                background-color: rgb(196, 248, 255);
+
+                background-color: rgb(0, 255, 255);
                 font-family: cursive;
             }
+            p{
+                background-color: rgba(255, 228, 196, 0.589);
+                text-align: center;
+            }
             #ordered{
-                color:cornflowerblue
+                color: cornflowerblue;
             }
             .section-2{
-                font-family: papyrus, fantasy;
-                border: 3px solid white
+                font-family: 'times new roman', fantasy;
+                border: 3px solid whitesmoke;
             }
             .odd{
-                color:rgb(247, 0, 255);
-                background-color: rgb(56, 18, 197);
-                color:aquamarine
+                color: orange;
+                background-color: beige;
+                color: #0B6623;
             }
             h1{
-                font-size: 200px;
+                 font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 24,
+    "SHLN" 50;
             }
-            #bold{
-                font-weight: 900;
+            img{
+                width: 250px;
+            }
+            .special{
+                font-size: 30px;
+                color: red;
+            }
+            #box{
+                margin:5px;
+                padding: 5px;
+            }
+        #nana{
+        color: yellow;
+    }
+            .box-wrapper{
+                display: block;
+                margin: auto;
+                width: 50%;
+            }
+            .lists-wrapper{
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+            #img-wrapper{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
         </style>
-    </head>
-    <body>
-        <h1>Advanced HTML</h1>
-        <!--Inline Style. It is a BAD syntax-->
-        <div style="background:rgb(112, 48, 185);">
-            <p>This is <span class="special"> a div</span>!</p>
-        </div>
-        <p>This is how you make an ordered list</p>
-        <ol>
-            <li>Computer science principles</li>
-            <li>Computer programing 1</li>
-            <li>Computer programing 2</li>
-            <li>Advanced Computer programming (Programming 3) </li>
-        </ol>
-        <p>This is how you make an unordered list (bulleted list) lisy</p>
-        <ul style="list-style-type: circle;">
-            <li>Apple</li>
-            <li>Orange</li>
-            <li>Banana</li>
-            <li>Peach</li>
-            <li>Pear</li>
-        </ul>
+
+</head>
+<body>
+    <h1>Advanced HTML</h1>
+    <!--inline style, it is bad syntax-->
+    <div class="boxwrapper">
+    <div id="box">
+        <p>this is in a div</p>
+    </div>
+</div>
+<div id="lists-wrapper">
+
+    <div id= "ordered">
+    <p>This is how <span class="special">you make </span> an ordered list</p>
+    <ol>
+        <li>ba<span id="nana"> nana</span></li>
+        <li>strawberry</li>
+        <li>apple</li>
+    </ol>
+    </div>
+    <div id= "unordered" class="section-2" >
+    <ul style="list-style-type: circle;">
+        <li>carrot</li>
+        <li>tomato</li>
+        <li>pea</li>
+    </ul>
+    </div>
+    </div>
         <a href="https://www.w3schools.com/" target="_blank">W3schools unordered lists</a>
-        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2025-08/250810-lizard-pixar-se-310p-cf932d.jpg" alt="Lizard Meme" height="200px"/>
-    </body>
+    <div id="img-wrapper">
+
+    <img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+
+    <img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+</div>
+
+
+
+
+
+</body>
+
+
+
 </html>
