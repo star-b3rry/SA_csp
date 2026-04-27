@@ -7,7 +7,7 @@ while start <= 20:
 
 print("The loop is over")
 
-"""goose = random.randint(1,25)
+goose = random.randint(1,25)
 count = 1
 
 while count != goose:
@@ -26,4 +26,4 @@ while True:
     elif guess < number:
         print("Guess higher")
     else:
-        print("Guess lower")"""
+        print("Guess lower")
