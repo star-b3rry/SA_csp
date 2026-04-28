@@ -5,21 +5,32 @@
         <meta charset="UTF-8">
     </head>
     <style>
-       h1 { color: pink; text-align: center;}
+       h1 { color: pink; text-align: center;
+    padding: 5px;}
         h2 { color: pink; text-align: center;}
         p { color: #f8d7ff; text-align: center;}
-        h6 { color: pink; text-align: center;}
-        ul { color: rgb(242, 204, 252); }
+        h6 { color: pink; text-align: center;
+        padding: 5px;}
+        .centered-box { 
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 0 auto;
+
+            color: rgb(242, 204, 252);
+        ;
+        }
+
         body { background-color: rgb(173, 135, 209);}
         *{ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
         img{
             width: 250px;
             grid-area: menu;
         }
-        
-        
-        div {
-            padding: 25px 50px 75px;
+        .padded-box{
+            padding: right;
+            border: 1px black;
+            background-color: #f8d7ff;
+            margin-right: auto;
         }
         .container {
             display: grid;
@@ -28,11 +39,10 @@
     'menu main main main main right'
     'menu footer footer footer footer footer';
         } 
-        
     </style>
     <body>
         <meta charset="UTF-8">
-     <div class="container header">
+     <div class="centered-box">
         <h1>Crimping Wigs</h1>
      </div>
         <h6>Disclaimer, these tips are from personal experiences and others experiences, cosplay doesn't really have any rules to follow (besides basic human decency), most stuff  here is just opion based and tips from a cosplayer that's been doing cosplay for about 7 years. </h6>
@@ -61,7 +71,7 @@
                 </div>
                 <h1>Crimping Tips For Success</h1>
                 </div>
-               <div class="container main">
+               <div class="padded-box">
                 <ul>
                     <li>Crimping thin sections one at a time, usually about half a centimeter in height</li>
                     <li>Brush weft before crimping to avoid any knots in the crimp</li>
@@ -74,6 +84,7 @@
                 </ul>
                 </div>
                 <footer>
+                    <button onclick=""
                 <p>Check out this website to see more benefeits of crimping and why cosplayers and wigmakers reccomend it!</p>    <a href="https://www.epiccosplay.com/blogs/wig-tips/why-do-some-cosplayers-and-stylists-crimp-their-wigs" target="_blank">Why do Some Cosplayers and Wig Stylists Crimp Their Wigs?</a>
                 </footer>
      </div>
